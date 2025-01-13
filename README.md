@@ -8,6 +8,7 @@ Idea is to layer the project so that domain files are in the root, which any lay
 We can then have a structure like (example):
 
 domain <- data layer <- HTTP server
+
 domain <- data layer <- some other layer <- CLI
 
 Any layer in-between is meant to provide an API so that the actual implementation can be switched, e.g. a 
