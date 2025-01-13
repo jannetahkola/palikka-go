@@ -1,5 +1,5 @@
 # Palikka Go
-Rewrite of Palikka in Golang. Not finished, only user management, authn & authz are done(-ish)
+Rewrite of [Palikka](https://github.com/jannetahkola/PWP) in Golang. Not finished, only user management, authn & authz are done(-ish)
 
 Project was last updated during 2024.
 
