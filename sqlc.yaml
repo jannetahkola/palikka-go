@@ -1,0 +1,18 @@
+version: "2"
+sql:
+  - engine: "sqlite"
+    queries: "./repository/sqlite/query"
+    schema: "./repository/sqlite/migration"
+    gen:
+      go:
+        package: "sqlc"
+        out: "./repository/sqlite/.sqlc"
+        emit_interface: true
+        emit_pointers_for_null_types: true
+        emit_exported_queries: true
+        overrides:
+          - column: "user.active"
+            nullable: false
+            go_type:
+                import: "palikka-go/repository/sqlite/types"
+                type: "Bool"
